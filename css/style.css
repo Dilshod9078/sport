@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+body{
+    font-family: cursive;
+    background-color: teal;
+}
+.wrapper{
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    /* gap: 30px; */
+}
+.box{
+    margin-bottom: 50px;
+}
+.card{
+    margin-bottom: 50px;
+}
+.demo{
+    margin-bottom: 50px;
+}
+.card-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.box__label{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+}
+.box__xokkey{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    opacity: 0.3;
+}
+.wrapper__line{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.wrapper__football{
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+}
+.card__volleyball{
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+}
+.demo__tennis{
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+}
+.inner__xokkey{
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+}
+.wrapper__check:checked ~ .wrapper__line{
+    background-image: url("../image/footbal.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.card__check:checked ~ .wrapper__line{
+    background-image: url("../image/volleybol.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.demo__check:checked ~ .wrapper__line{
+    background-image: url("../image/tennis.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.inner__check:checked ~ .wrapper__line{
+    background-image: url("../image/hokkey.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
